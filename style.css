@@ -13,6 +13,15 @@
  Text Domain:  Noteblog-child
 */
 
-body {
-	background: pink;
+
+
+.footer-widget-wrapper, .site-footer {
+    background-color: #d4befe;
+	border: none;
+}
+
+
+.copy-right-section {
+    border-top: 1px solid #3f4042;
+    color: #fff;
 }
