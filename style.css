@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /*
- Theme Name:   Noteblog- Child theme
+ Theme Name:   Noteblog-Child
  Description:  A new Child theme of Noteblog
  Author:       Jessy Rae & Magadelana Drgas
  Author URI:   http://example.com
@@ -13,6 +13,9 @@
  Text Domain:  Noteblog-child
 */
 
+@import url(file:///../themes/noteblog/style.css)
+ @import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Prata');
 
 
 .footer-widget-wrapper, .site-footer {
@@ -22,6 +25,49 @@
 
 
 .copy-right-section {
-    border-top: 1px solid #3f4042;
     color: #fff;
 }
+
+.frontpage-site-title{
+    font-size: 60px;
+    color: #fff;
+	font-style:normal;
+}
+.archive-page-title, .frontpage-site-title, .navbar-brand, .search-page-title {
+    font-family: Oswald, serif;
+}
+
+
+.page .container article h2, .page .container article h3, .page .container article h4, .page .container article h5, .page .container article h6, .single h1, .single h2, .single h3, .single h4, .single h5, .single h6 {
+    font-family: Oswald, serif;
+    color: #4dfbf1;
+	font-style:normal;
+
+}
+
+
+p {
+	font-family: 'Prata', serif;
+	color: #606266;
+    margin-bottom: 1.5em;
+    line-height: 1.9em;
+    font-size: 18px;
+}
+
+.page .container .entry-date, .single-post .container .entry-date {
+    font-family: 'Prata', serif;
+	color: #C2C6D4;
+	font-style: none;
+	margin-bottom: 25px;
+    font-size: 16px;
+    text-align: left;
+
+}
+
+
+.post-thumbnail-wrap {
+    position: relative;
+    overflow: hidden;
+    min-height: 300px;
+}
+
