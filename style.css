@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /*
- Theme Name:   Noteblog-Child
+ Theme Name:   Child-Noteblog
  Description:  A new Child theme of Noteblog
  Author:       Jessy Rae & Magadelana Drgas
  Author URI:   http://example.com
@@ -13,10 +13,33 @@
  Text Domain:  Noteblog-child
 */
 
-@import url(file:///../themes/noteblog/style.css)
- @import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
 @import url('https://fonts.googleapis.com/css?family=Prata');
 
+
+blockquote {
+    border-left: 5px solid #d4befe;
+}
+
+
+input#submit {
+    background-color: #242071;
+    background: #ccc686;
+}
+
+a{
+ color: #d4befe;
+	
+}
+
+a:visited, a:active, a:hover, a:focus, #secondary .widget #recentcomments a, #secondary .widget .rsswidget {
+    color: #d4befe;
+}
+
+a:visited {
+    color:  #d4befe;
+    text-decoration: none;
+}
 
 .footer-widget-wrapper, .site-footer {
     background-color: #d4befe;
@@ -46,6 +69,12 @@
 }
 
 
+
+.archive-page-header, .search-page-header {
+    margin-bottom: 2.5em;
+    margin-top: 80px;
+}
+
 p {
 	font-family: 'Prata', serif;
 	color: #606266;
@@ -65,9 +94,63 @@ p {
 }
 
 
-.post-thumbnail-wrap {
-    position: relative;
-    overflow: hidden;
-    min-height: 300px;
+.page .container article, .single-post .container article {
+    padding: 20px 50px 40px;
+    margin-top: 90px;
 }
 
+
+.secondary-inner {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 25px rgba(0, 0, 0, .08);
+    border-radius: 2px;
+	color: #727272;
+    font-size: 15px;
+    margin-bottom: 35px;
+    margin-top: 90px;
+}
+
+
+.navbar-nav {
+    float: right;
+    margin: 0;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #f5f5f5;
+}
+
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #fff;
+    background-color: #d4befe;
+}
+
+.post-thumbnail {
+	position: inherit;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    min-height: 400px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px 0 0 5px;
+}
+
+
+
+
+.footer-widgets, .footer-widgets p {
+    font-size: 14px;
+	font-family: 'Prata', serif;
+	line-height: 250%;
+	color: #dedede;
+}
+
+.footer-widgets a, .footer-widgets li a {
+    color: #ffffff;
+}
